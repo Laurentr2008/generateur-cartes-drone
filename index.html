@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Cartes Flying Manta</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        // Le code React sera ici - Je vous le fournirai dans le message suivant
+        const { useState, useRef } = React;
+        
+        const DroneCardGenerator = () => {
+            return React.createElement('div', { 
+                style: { padding: '20px', textAlign: 'center' }
+            }, 
+                React.createElement('h1', { 
+                    style: { color: '#2563eb', marginBottom: '20px' }
+                }, '🚁 Générateur de Cartes Flying Manta'),
+                React.createElement('p', null, 'Application en cours de chargement...')
+            );
+        };
+        
+        ReactDOM.render(React.createElement(DroneCardGenerator), document.getElementById('root'));
+    </script>
+</body>
+</html>
